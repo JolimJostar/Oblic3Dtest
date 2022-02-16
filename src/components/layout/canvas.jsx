@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react'
 
 const LControl = () => {
   
-  return <OrbitControls enableZoom={true} enableRotate={true} enablePan={false} enableDamping={false}/>
+  return <OrbitControls enableZoom={false} enableRotate={true} enablePan={false} enableDamping={false}/>
 }
 const LCanvas = ({ children }) => {
 
