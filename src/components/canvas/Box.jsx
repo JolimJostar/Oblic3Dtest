@@ -6,15 +6,15 @@ import { Suspense } from "react";
 
 const BoxComponent = () => {
 
-  const gltf = useLoader(GLTFLoader, '/ring_test.gltf')
+  const gltf = useLoader(GLTFLoader, '/untitled.gltf')
 
   return (
     <>
       <Suspense fallback={null}>
         <OrbitControls enablePan={false} enableZoom={false} enableRotate={false} />
         <primitive object={gltf.scene} scale={0.1}/>
-        <ambientLight />
-        <directionalLight position={[5, 5, 5]} />
+        <ambientLight intensity={10} />
+        <directionalLight intensity={20} position={[10, 10, 10]} />
       </Suspense>
     </>
   )
