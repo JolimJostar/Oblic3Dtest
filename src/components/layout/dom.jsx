@@ -9,7 +9,7 @@ const Dom = ({ children }) => {
 
   return (
     <div
-      className='absolute top-0 left-0 z-10 w-screen h-screen overflow-hidden dom'
+      className='left-[50%] top-[50%] absolute -translate-x-1/2 -translate-y-1/2 z-10 w-[500px] h-[500px] overflow-hidden dom bg-transparent'
       ref={ref}
     >
       {children}
